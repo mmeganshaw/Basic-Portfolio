@@ -3,49 +3,145 @@
     <head>
     <meta charset="UTF-8">
     	<title>Megan Shaw | Front End Web Development</title>
-    <!-- linking to bootstrap -->
-    <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- linking to internal css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
- 		<body> 
- 		<!-- Navigation will go here  -->
- 			<nav> 
- 			<center><h1>Relax, It's Just A Panic At The Disco Fan Page</h1></center>
- 			<div class="topnav">
- 				<logo>Megan Shaw</logo>
-  				<a class="active" href="#home">Home</a>
-  				<a href="#news">News</a>
-  				<a href="#contact">Contact</a>
-  				<a href="#about">About</a>
-			</div>
+<style>
 
- 			<<!-- img src= "http://rockonphilly.com/wp-content/uploads/2013/10/PATD_TooWeirdToLiveTooRareToDie_640x360.jpg" alt="Panic At The Disco Photo"></center> -->
-			<!-- <div background> -->
- 			<h2>About Panic</h2>
- 				<p>Panic! at the Disco is an American rock band from Las Vegas, Nevada, formed in 2004 and featuring the current lineup of vocalist Brendon Urie, accompanied on tour by bassist Dallon Weekes, guitarist Kenneth Harris and drummer Dan Pawlovich. Founded by childhood friends Ryan Ross, Spencer Smith, Brent Wilson and Urie, Panic! at the Disco recorded its first demos while its members were in high school. Shortly after, the band recorded and released its debut studio album, A Fever You Can't Sweat Out (2005). Popularized by the second single, "I Write Sins Not Tragedies", the album was certified double platinum in the US. In 2006, founding bassist Brent Wilson was fired from the band during an extensive world tour and subsequently replaced by Jon Walker.</p>
+body {
+	background-color: red;
+	/*background-color: red;*/
+}
 
-				<p>Influenced by 1960s rock bands the Beatles, the Zombies and the Beach Boys, and preceded by the single "Nine in the Afternoon", the band's second studio album, Pretty. Odd. (2008) marked a significant departure from the sound of the band's debut. Ross and Walker, who favored the band's new direction, departed because Urie and Smith wanted to make further changes to the band's style. The duo subsequently formed a new band, The Young Veins, leaving Urie and Smith as the sole remaining members of Panic! at the Disco.</p>
+ul {
+    list-style-type: none;
+/*    overflow: hidden;*/
+    background-color: #ffffff;
+    padding-right: 320px;
+    color: #777777;
+    height: 100px;
+    border-bottom-style: solid;
+	border-color: #cccccc;
+}
 
-				<p>Continuing as a duo, Urie and Smith released a new single, "New Perspective", and recruited Dallon Weekes as the group's bassist and Ian Crawford as the band's lead guitarist to accompany the band during live performances. Weekes was later inducted into the band's lineup as a full-time member in 2010, nearing the end of the recording of the band's third studio album, Vices & Virtues (2011). The album was recorded solely by Urie and Smith, with producers John Feldmann and Butch Walker.</p>
+li {
+    float: right;
 
-				<p>As a three-piece, Urie, Smith, and Weekes recorded and released the band's fourth studio album, Too Weird to Live, Too Rare to Die!, in 2013. Prior to the release of the album, Smith unofficially left the band due to health and drug-related issues, leaving Urie and Weekes as the remaining members.</p>
+}
 
-				<p>In 2015, Smith officially left the band after not performing live with the band since his departure in 2013. Shortly thereafter, Weekes reverted to being a touring member once again, leaving Urie as the only member of the official lineup. In April 2015, "Hallelujah" was released as the first single from Panic! at the Disco's fifth studio album, Death of a Bachelor (2016).
- 			</p>
- 			<p> Bio provided by the folks at <a href="https://en.wikipedia.org/wiki/Panic!_at_the_Disco"> Wikipedia </a> </p>
-		<h1>Why Is Panic So Awesome?</h1>
-		<ul>
-			<li>They Can Transform At The Drop of a Hat</li>
-			<li>Relatable and Clever Lyrics</li>
-			<li>Old School Vegas Vibe</li>
-			<li>Amazing Concerts</li>
-			<li>Brendon Urie is A Powerhouse Singer</li>
-		</ul>
-		<center><h1>My Favorite Panic Song:</h1>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/tGE381tbQa8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
+li a {
+    display: block;
+    color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #777777;
+}
 
- 	</body>
+li a:hover:not(.active) {
+    background-color: #111;
+}
 
- </html>
+.active {
+  	height: 100px;
+  	width: 250px;
+  	font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #FFF;
+    background-color: #4aaaa5;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: 160px;
+	font-size: 30px;
+
+}
+
+div.about {
+	float: left;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	margin-left:200px;
+	margin-top: 40px;
+	margin-bottom: 200px;
+	height: 400px;
+    width: 40%;
+    background-color: white;
+    font-size: 20px;
+}
+
+div.connect{
+	text-align: center;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	margin-left:40px;
+	margin-top: 40px;
+	height: 200px;
+    width: 20%;
+    background-color: white;
+    color: #4aaaa5;
+
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 30px;
+	color: #4aaaa5;
+}
+
+footer {
+	font-style: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	padding-top: 30px;
+	clear: both;
+	height: 100px;
+	color: #FFF;
+	background-color: #666666;
+	text-align: center;
+	border-top-width: 10px;
+	border-top-style: solid;
+	border-color: #4aaaa5;
+		
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#portfolio">Portfolio   |</a></li>
+  <li><a href="#about">About   |</a></li>
+  <li style="float:left;"><a class="active" href="#about">Megan Shaw</a></li>
+</ul>
+	<div class="about">
+		<!-- <h2>About Me</h2> -->
+			<!-- somehow insert line here -->
+		<!-- <img src="greatimageofme.jpg" alt="megan shaw"> -->
+		<h2>Megan Shaw</h2>
+		<br>
+		<img src="https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" style="height: 100px; width:100px">
+		There's not much to say about me. I'm a pretty average lady who likes computers. I've wanted to work with computers my entire life, and thought this would be a great chance to become more of a wizard at computers rather than a front end user 
+		<br>
+		Let's hope I'm right 
+		</p>
+	</div>
+	<div class="connect">
+		<h3>Connect With Me</h3>
+		<!-- Somehow insert line here -->
+		<a href="www.linkedin.com" target="_blank"><img src="https://static1.squarespace.com/static/57ba0049e3df2876f5476403/t/5a0363b1085229909dec2171/1510172785357/linkedin-logo.png" alt="GitHub" style="height:50px; width:50px"></a>
+		<a href="www.github.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/38/38401.svg" alt="LinkedIn" style="height:50px; width:50px></a>
+		<a href="www.stackoverflow.com" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/stackoverflow.png" alt="StackOverflow" style="height:50px; width:50px;padding-left:5px;"></a>
+
+	</div>
+
+</body>
+<footer>
+	Copyright 2018 Megan Shaw
+</footer>
+</html>
+
+
 
